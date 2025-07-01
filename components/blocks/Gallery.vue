@@ -8,7 +8,7 @@ const props = defineProps<{
 const galleryItems = computed(() => {
 	return props.data.gallery_items?.map((item: BlockGalleryFile) => {
 		return item.directus_files_id as File;
-	});
+	}).filter(Boolean) || [];
 });
 </script>
 
