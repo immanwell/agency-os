@@ -67,7 +67,7 @@ onUnmounted(() => {
 	<div class="gap-4 mt-4 md:columns-3">
 	<button
 		v-for="(item, itemIdx) in items"
-		v-if="item"
+		v-if="item && item.id"
 		:key="item.id"
 			:class="[
 				'block relative w-full mb-6 overflow-hidden border dark:border-gray-700 rounded-card focus:outline-none',
