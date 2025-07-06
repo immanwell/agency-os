@@ -14,7 +14,7 @@ export interface Theme {
 }
 
 export const theme = {
-	primary: 'purple',
+	primary: 'rose',
 	gray: 'slate',
 	borderRadius: 'lg',
 	googleFonts: {
